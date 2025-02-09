@@ -12,7 +12,8 @@ interface IPrams {
 }
 
 const Product = async ({ params }: { params: IPrams }) => {
-  const product = await getProductById(params);
+  const prms = await params;
+  const product = await getProductById(prms);
   const user = await getCurrentUser();
 
   if (!product)
