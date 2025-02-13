@@ -1,10 +1,8 @@
 import { getCurrentUser } from "@/actions/getCurrentUser";
 import { NextResponse } from "next/server";
 
-export async function DELETE(
-  request: Request,
-  { params }: { params: { id: string } }
-) {
+export async function DELETE(request: Request, props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const currentUser = await getCurrentUser();
 
   if (!currentUser) return NextResponse.error();
