@@ -5,7 +5,14 @@ import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { formatPrice } from "@/utils/formatPrice";
 import Heading from "@/app/components/Heading";
 import Status from "@/app/components/Status";
-import { MdCached, MdClose, MdDelete, MdDone, MdRemove } from "react-icons/md";
+import {
+  MdCached,
+  MdClose,
+  MdDelete,
+  MdDone,
+  MdRemove,
+  MdRemoveRedEye,
+} from "react-icons/md";
 import ActionBtn from "@/app/components/ActionBtn";
 import { useCallback } from "react";
 import axios from "axios";
@@ -100,7 +107,7 @@ const ManageProductsClient: React.FC<ManageProductsClientProps> = ({
               }}
             />
             <ActionBtn
-              icon={MdRemove}
+              icon={MdRemoveRedEye}
               onClick={() => {
                 router.push(`product/${params.row.id}`);
               }}
