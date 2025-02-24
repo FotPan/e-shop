@@ -8,7 +8,7 @@ import AddRating from "./AddRating";
 import { getCurrentUser } from "@/actions/getCurrentUser";
 
 interface IPrams {
-  productId: string;
+  productId?: string;
 }
 
 const Product = async (props: { params: Promise<IPrams> }) => {
