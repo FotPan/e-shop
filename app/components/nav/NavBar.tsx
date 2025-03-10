@@ -4,7 +4,7 @@ import { Redressed } from "next/font/google";
 import CartCount from "./CartCount";
 import UserMenu from "./UserMenu";
 import { getCurrentUser } from "@/actions/getCurrentUser";
-import Categories from "./Categories";
+//import Categories from "./Categories";
 import Searchbar from "./SearchBar";
 
 const redressed = Redressed({
@@ -46,7 +46,6 @@ const NavBar = async () => {
           </div>
         </Container>
       </div>
-      <Categories />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 
 import { categories } from "@/utils/Categories";
 import Container from "../Container";
@@ -37,3 +37,4 @@ const Categories = () => {
 };
 
 export default Categories;
+*/

@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 
 import { useSearchParams } from "next/dist/client/components/navigation";
 import { useRouter } from "next/navigation";
@@ -62,3 +62,4 @@ const Category: React.FC<CategoryProps> = ({ label, icon: Icon, selected }) => {
 };
 
 export default Category;
+*/
