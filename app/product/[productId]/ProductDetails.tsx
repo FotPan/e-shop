@@ -116,7 +116,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
           <div>{product.reviews.length} reviews</div>
         </div>
         <Horizontal />
-        <div className="text-justify">{product.description}</div>
+        <div className="text-justify">DESCRIPTION: {product.description}</div>
         <Horizontal />
         <div>
           <span className="font-semibold">CATEGORY:</span> {product.category}
