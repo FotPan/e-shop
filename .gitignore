@@ -37,4 +37,4 @@ next-env.d.ts
 
 
 #google key
-firebase.ts
+libs/firebase.ts
